@@ -18,13 +18,12 @@ public class Vehicle {
 	
 	@Column(name = "vehicle_Name")
 	private String vehicleName;
-	
+
 	@Column(name = "Vehicle_Number")
 	private String vehicleNumber;
 	
 	@Column(name = "Owner_Name")
 	private String ownerName;
-
 
 	public Vehicle() {
 		super();
