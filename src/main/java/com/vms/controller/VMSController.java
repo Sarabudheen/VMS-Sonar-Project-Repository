@@ -24,7 +24,7 @@ public class VMSController {
 	@Autowired
 	VehicleDAO dao;
 	
-	
+	//RequestMapping for Inserting the vehicle
 	@PostMapping("PerformInsert")
 	public String performInsert(@RequestBody Vehicle vehicle) {
 		dao.save(vehicle);
