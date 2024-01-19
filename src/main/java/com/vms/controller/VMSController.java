@@ -30,13 +30,15 @@ public class VMSController {
 		dao.save(vehicle);
 		return "Vehicle Details Inserted";
 	}
-	
+
+	//RequestMapping for Deleting the vehicle
 	@PutMapping("PerformUpdate")
 	public String performUpdate(@RequestBody Vehicle vehicle) {
 		 dao.save(vehicle);
 		 return "Vehicle Details Updated";
 	}
-	
+
+	//RequestMapping for Updating the vehicle
 	@DeleteMapping("PerformDelete/{vehicleId}")
 	public String performDelete(@PathVariable("vehicleId") int vehicleId) {
 		dao.deleteById(vehicleId);
@@ -44,7 +46,7 @@ public class VMSController {
 	}
 	
 	
-	
+	//RequestMapping for Viewing all the vehicles
 	@GetMapping("ViewAll")
 	public List<Vehicle> getAllVehicles(){
 		Iterator<Vehicle> it = dao.findAll().iterator();
