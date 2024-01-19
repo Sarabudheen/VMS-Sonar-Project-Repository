@@ -25,7 +25,6 @@ public class Vehicle {
 	@Column(name = "Owner_Name")
 	private String ownerName;
 
-	//private String ownerAddress;
 	public Vehicle() {
 		super();
 	}
